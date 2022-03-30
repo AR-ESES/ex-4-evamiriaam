@@ -1,13 +1,13 @@
-let espLarg = 20;
-let espAltura = 20;
+let espLarg = 10;
+let espAltura = 5;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0);
-  stroke(255);
-  strokeWeight(2);
-  noFill();
   background(216,191,216);
+  stroke(255);
+  strokeWeight(6);
+  noFill();
+
 }
 
 function draw() {
@@ -16,8 +16,8 @@ function draw() {
     for (let j = 1; j < espAltura; j++) {
       push();
       translate(i * width / espLarg,j * height / espAltura)
-      translate(-500, -400);
-      scale(0.5);
+      translate(-300, -150);
+      scale(0.2);
   //Cabelo
 fill(198, 140, 83);
 stroke(198, 140, 83);
@@ -33,15 +33,6 @@ fill(198, 140, 83);
 stroke(198, 140, 83);
 arc(950,150,300,300,-PI,0,OPEN);
 
-//Relva
-//fill(76, 213, 85);
-//stroke(76, 213, 85);
-//rect(0, 850, 2000, 190);
-
-//Sol
-//fill(255, 255, 51);
-//stroke(255, 255, 51);
-//circle(150, 150, 175);
 noStroke();
 
 //Bochecha Esquerda
@@ -175,7 +166,6 @@ strokeWeight(5);
 arc(950,270,80,80,0,PI,CHORD);
 
 pop();
-}
-
-}
+   }
+  }
 }
